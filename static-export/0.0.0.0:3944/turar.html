@@ -1,0 +1,585 @@
+
+
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		
+		<meta property="og:title" content="Turar - Hjørundfjord Mountain Guide" />
+		<title>Turar - Hjørundfjord Mountain Guide</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+		<meta name="description" content="">
+		<meta property="og:description" content="" />
+
+
+		
+		<meta property="og:url" content="https://hjorundfjordmountainguide.no/turar" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Hjørundfjord Mountain Guide" />
+
+
+		
+
+
+<link href="css/css.css" rel="stylesheet">
+
+
+
+
+
+		<script>
+/*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+
+
+
+
+/* CSS rel=preload polyfill (from src/cssrelpreload.js) */
+/* CSS rel=preload polyfill. Depends on loadCSS function */
+(function( w ){
+  // rel=preload support test
+  if( !w.loadCSS ){
+    return;
+  }
+  var rp = loadCSS.relpreload = {};
+  rp.support = function(){
+    try {
+      return w.document.createElement("link").relList.supports( "preload" );
+    } catch (e) {}
+  };
+
+  // loop preload links and fetch using loadCSS
+  rp.poly = function(){
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+        w.loadCSS( link.href, link );
+        link.rel = null;
+      }
+    }
+  };
+
+  // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+  if( !rp.support() ){
+    rp.poly();
+    var run = w.setInterval( rp.poly, 300 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        w.clearInterval( run );
+      } )
+    }
+  }
+}( this ));
+
+</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+		<script>
+		 WebFont.load({
+		    google: {
+		      families: ['Raleway:300,400,600']
+		    }
+		  });
+		</script>
+
+		
+		
+
+		
+		
+
+		
+		
+	</head>
+	
+	<body>
+	
+	<div id="wrapper">
+		
+		<div class="top-wrapper open">
+			<div class="top open">
+				<div class="container open">
+					<div class="logo">
+							<a href="index.html">
+								<picture class="img">
+				                	<!-- <source media="(max-width: 768px)"
+				                	srcset="/images/logo50inv.png"> -->
+				                    <source
+				                    srcset="images/logo80inv.png">
+								<img src="images/logo80inv.png" class=""/>
+				                </picture>
+				                </a>
+					</div>
+					<ul class="navigasjon light ismenuopen">
+						<div class="inner-wrap">
+							
+								
+								<li>
+									<a  class=""href="index.html">Heim</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class="active"href="turar.html">Turar</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class=""href="overnatting.html">Overnatting</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class=""href="om-oss.html">Om oss</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class=""href="kontakt.html">Kontakt</a>
+								</li>
+								
+							
+						</div>
+					</ul>
+					<div class="hamburger light ismenuopen" onclick="toggleMenu()">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+
+		
+		<div id="body">
+			
+
+
+			
+			
+
+			<div class="container-fluid space">
+				<div class="container main-section">
+					<div class="row overflowfix">
+						
+							<div class="col-md-12 overflowfix col">
+								<div>
+									
+
+
+<!-- <pre></pre> -->
+	<div class="breadcrumbs">
+		
+
+			
+				<a href="index.html">Heim</a> - 
+			
+		
+
+			
+				<a class="current" href="turar.html">Turar</a>
+			
+		
+	    
+	    <!-- <a href="/turar">Turar</a> - -->
+	    <!-- <a href="/turar/" class="current"></a> -->
+	</div>
+	<script type="application/ld+json">
+	{
+	 "@context": "http://schema.org",
+	 "@type": "BreadcrumbList",
+	 "itemListElement":
+	 [
+	 
+	 	{
+	 		"@type": "ListItem",
+	 		"position": 1,
+	 		"item":{
+	 			"@id": "/",
+	 			"name": "Heim"
+	 		}
+	 	}
+	 	
+	 		,
+	 	
+	 
+	 	{
+	 		"@type": "ListItem",
+	 		"position": 2,
+	 		"item":{
+	 			"@id": "/turar",
+	 			"name": "Turar"
+	 		}
+	 	}
+	 	
+	 
+	 ]
+	}
+	</script>
+	
+
+
+
+<h1>Turar</h1>
+<div class="motherboat">
+	
+		
+			
+<!-- <pre>[object Object]</pre> -->
+	<div class="betaboat">
+		
+	            <a href="turar/arrangement.html">
+	                <div class="image">
+
+	                  
+	                  	<img src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,f_auto,g_auto,h_266,w_400/v1481480378/hmg/tur-kategoris/bilde/rthpmywpfcnyarr6kdns.jpg" alt="">
+	                  
+	                </div>
+	            </a>
+		
+	            <div class="space">
+	                <a href="turar/arrangement.html">
+	                	<h3 class="boat">Arrangement</h3>
+	                </a>
+	                <p></p>
+	            </div>
+	    
+	    
+	</div>
+
+		
+	
+		
+			
+<!-- <pre>[object Object]</pre> -->
+	<div class="betaboat">
+		
+	            <a href="turar/sommarturar.html">
+	                <div class="image">
+
+	                  
+	                  	<img src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,f_auto,g_auto,h_266,w_400/v1481479927/hmg/tur-kategoris/bilde/jrozukb6wqjq5xycrvgp.jpg" alt="">
+	                  
+	                </div>
+	            </a>
+		
+	            <div class="space">
+	                <a href="turar/sommarturar.html">
+	                	<h3 class="boat">Sommarturar</h3>
+	                </a>
+	                <p></p>
+	            </div>
+	    
+	    
+	</div>
+
+		
+	
+		
+			
+<!-- <pre>[object Object]</pre> -->
+	<div class="betaboat">
+		
+	            <a href="turar/vinterturar.html">
+	                <div class="image">
+
+	                  
+	                  	<img src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,f_auto,g_auto,h_266,w_400/v1481480042/hmg/tur-kategoris/bilde/nazfbcqyhu1ueob7myyf.jpg" alt="">
+	                  
+	                </div>
+	            </a>
+		
+	            <div class="space">
+	                <a href="turar/vinterturar.html">
+	                	<h3 class="boat">Vinterturar</h3>
+	                </a>
+	                <p></p>
+	            </div>
+	    
+	    
+	</div>
+
+		
+	
+		
+			
+<!-- <pre>[object Object]</pre> -->
+	<div class="betaboat">
+		
+	            <a href="turar/familieturar.html">
+	                <div class="image">
+
+	                  
+	                  	<img src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,f_auto,g_auto,h_266,w_400/v1481480235/hmg/tur-kategoris/bilde/pcmnkmyjo7lz3kqifyeu.jpg" alt="">
+	                  
+	                </div>
+	            </a>
+		
+	            <div class="space">
+	                <a href="turar/familieturar.html">
+	                	<h3 class="boat">Familieturar</h3>
+	                </a>
+	                <p></p>
+	            </div>
+	    
+	    
+	</div>
+
+		
+	
+	
+	<div class="betaboat"></div>
+	<div class="betaboat"></div>
+	<div class="betaboat"></div>
+</div>
+
+
+
+
+
+									<!-- <div class="col-sm-12 col spons">
+										<p>Kontakt oss for eit skreddarsydd opplegg.</p>
+										<a class="btn btn-info"  href="/kontakt">
+										Kontakt oss
+										</a>
+									</div> -->
+								</div>
+							</div>
+
+						
+					</div>
+				</div>
+			</div>
+
+	</div>
+
+	
+<footer>
+	<div class="container">
+		<div class="footer-content">
+			<div class="row">
+				<div class="col-md-12 col">
+					<img src="images/logo200inv.png" />
+					<p class="strong">Hjørundfjord Mountain Guide</p>
+					<p>kontakt@hjorundfjordmountainguide.no</p>
+					<img style="max-width: 200px;" src="images/rablogo.svg" />
+					<p>Tlf: +47 45235902 eller +47 95065934</p>
+					<p>Org.nr: 926 678 159</p>
+
+					<p style="padding-top: 12px; margin-bottom: 0">
+						Nettside og design av
+						<a style="color: white" href="https://larskarbo.no">Lars Karbø</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		
+		
+
+	
+
+			
+			<script src="js/jquery/jquery-1.11.3.min.js"></script>
+
+			
+			<!-- <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script> -->
+
+
+			
+
+			
+			<script type="text/javascript" src="js/angular.js"></script>
+
+			<!-- calendar -->
+			<!-- <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
+			<script src="/bower_components/moment/min/moment.min.js"></script>
+			<script src="/bower_components/moment/locale/nb.js"></script>
+			<script src="/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+			<script src="/bower_components/fullcalendar/dist/lang/nb.js"></script>
+ -->
+			<script>
+			// $(document).ready(function(){
+			// 	$('#calendar').fullCalendar({
+			// 		lang: 'nb',
+			// 		fixedWeekCount: false,
+			// 		titleFormat: "MMMM",
+			// 		weekNumbers: false,
+			// 		height: 330,
+			// 		// dayClick: $scope.dayClick,
+			// 		// eventClick: $scope.eventClick,
+			// 		events: '/kalender/get-events',
+			// 		header:{
+			// 			left: 'title',
+			// 			center: '',
+			// 			right: 'prev next'
+			// 		}
+			// 	});
+				
+			// })
+
+			$("a[href^='http']").attr("target","_blank");
+			</script>
+
+			
+			
+
+			
+			<script src="js/kontakt.js"></script>
+			
+
+
+		
+			<script>
+				$(function() {
+				  $('a[href*="#"]:not([href="#"])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html, body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+
+				 //    document.querySelector('#body').scrollIntoView({ 
+					//   behavior: 'smooth' 
+					// });
+				  });
+				});
+			</script>
+		
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124659982-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-124659982-1');
+			</script>
+
+
+			<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Organization",
+			  "url": "https://hjorundfjordmountainguide.no",
+			  "contactPoint": [{
+			    "@type": "ContactPoint",
+			    "telephone": "+47 45235902",
+			    "contactType": "customer service"
+			  }]
+			}
+			</script>
+
+			<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "WebSite",
+			  "name": "Hjørundfjord Mountain Guide",
+			  "url": "https://hjorundfjordmountainguide.no"
+			}
+
+			</script>
+
+
+	</body>
+</html>

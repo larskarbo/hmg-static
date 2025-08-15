@@ -1,0 +1,636 @@
+
+
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		
+		<meta property="og:title" content="Slogen 1564moh - Hjørundfjord Mountain Guide" />
+		<title>Slogen 1564moh - Hjørundfjord Mountain Guide</title>
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+		<meta name="description" content="Slogen dronninga i Sunnmørsalpane.">
+		<meta property="og:description" content="Slogen dronninga i Sunnmørsalpane." />
+
+
+		
+		<meta property="og:image" content="https://res.cloudinary.com/dcxsmu9ql/image/upload/v1479840702/kpoy0k9qqx6nteovvkas.jpg" />
+		
+		<meta property="og:url" content="https://hjorundfjordmountainguide.no/turar/vinterturar/slogen-1564moh" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Hjørundfjord Mountain Guide" />
+
+
+		
+
+
+<link href="../../css/css.css" rel="stylesheet">
+
+
+
+
+
+		<script>
+/*! loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+(function(w){
+	"use strict";
+	/* exported loadCSS */
+	var loadCSS = function( href, before, media ){
+		// Arguments explained:
+		// `href` [REQUIRED] is the URL for your CSS file.
+		// `before` [OPTIONAL] is the element the script should use as a reference for injecting our stylesheet <link> before
+			// By default, loadCSS attempts to inject the link after the last stylesheet or script in the DOM. However, you might desire a more specific location in your document.
+		// `media` [OPTIONAL] is the media type or query of the stylesheet. By default it will be 'all'
+		var doc = w.document;
+		var ss = doc.createElement( "link" );
+		var ref;
+		if( before ){
+			ref = before;
+		}
+		else {
+			var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+			ref = refs[ refs.length - 1];
+		}
+
+		var sheets = doc.styleSheets;
+		ss.rel = "stylesheet";
+		ss.href = href;
+		// temporarily set media to something inapplicable to ensure it'll fetch without blocking render
+		ss.media = "only x";
+
+		// wait until body is defined before injecting link. This ensures a non-blocking load in IE11.
+		function ready( cb ){
+			if( doc.body ){
+				return cb();
+			}
+			setTimeout(function(){
+				ready( cb );
+			});
+		}
+		// Inject link
+			// Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
+			// Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
+		ready( function(){
+			ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+		});
+		// A method (exposed on return object for external use) that mimics onload by polling until document.styleSheets until it includes the new sheet.
+		var onloadcssdefined = function( cb ){
+			var resolvedHref = ss.href;
+			var i = sheets.length;
+			while( i-- ){
+				if( sheets[ i ].href === resolvedHref ){
+					return cb();
+				}
+			}
+			setTimeout(function() {
+				onloadcssdefined( cb );
+			});
+		};
+
+		function loadCB(){
+			if( ss.addEventListener ){
+				ss.removeEventListener( "load", loadCB );
+			}
+			ss.media = media || "all";
+		}
+
+		// once loaded, set link's media back to `all` so that the stylesheet applies once it loads
+		if( ss.addEventListener ){
+			ss.addEventListener( "load", loadCB);
+		}
+		ss.onloadcssdefined = onloadcssdefined;
+		onloadcssdefined( loadCB );
+		return ss;
+	};
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ));
+
+
+
+
+/* CSS rel=preload polyfill (from src/cssrelpreload.js) */
+/* CSS rel=preload polyfill. Depends on loadCSS function */
+(function( w ){
+  // rel=preload support test
+  if( !w.loadCSS ){
+    return;
+  }
+  var rp = loadCSS.relpreload = {};
+  rp.support = function(){
+    try {
+      return w.document.createElement("link").relList.supports( "preload" );
+    } catch (e) {}
+  };
+
+  // loop preload links and fetch using loadCSS
+  rp.poly = function(){
+    var links = w.document.getElementsByTagName( "link" );
+    for( var i = 0; i < links.length; i++ ){
+      var link = links[ i ];
+      if( link.rel === "preload" && link.getAttribute( "as" ) === "style" ){
+        w.loadCSS( link.href, link );
+        link.rel = null;
+      }
+    }
+  };
+
+  // if link[rel=preload] is not supported, we must fetch the CSS manually using loadCSS
+  if( !rp.support() ){
+    rp.poly();
+    var run = w.setInterval( rp.poly, 300 );
+    if( w.addEventListener ){
+      w.addEventListener( "load", function(){
+        w.clearInterval( run );
+      } )
+    }
+  }
+}( this ));
+
+</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+		<script>
+		 WebFont.load({
+		    google: {
+		      families: ['Raleway:300,400,600']
+		    }
+		  });
+		</script>
+
+		
+		
+
+		
+		
+
+		
+		
+	</head>
+	
+	<body>
+	
+	<div id="wrapper">
+		
+		<div class="top-wrapper open">
+			<div class="top open">
+				<div class="container open">
+					<div class="logo">
+							<a href="../../index.html">
+								<picture class="img">
+				                	<!-- <source media="(max-width: 768px)"
+				                	srcset="/images/logo50inv.png"> -->
+				                    <source
+				                    srcset="../../images/logo80inv.png">
+								<img src="../../images/logo80inv.png" class=""/>
+				                </picture>
+				                </a>
+					</div>
+					<ul class="navigasjon light ismenuopen">
+						<div class="inner-wrap">
+							
+								
+								<li>
+									<a  class=""href="../../index.html">Heim</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class="active"href="../../turar.html">Turar</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class=""href="../../overnatting.html">Overnatting</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class=""href="../../om-oss.html">Om oss</a>
+								</li>
+								
+							
+								
+								<li>
+									<a  class=""href="../../kontakt.html">Kontakt</a>
+								</li>
+								
+							
+						</div>
+					</ul>
+					<div class="hamburger light ismenuopen" onclick="toggleMenu()">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+
+		
+		<div id="body">
+			
+
+
+			
+			
+
+			<div class="container-fluid space">
+				<div class="container main-section">
+					<div class="row overflowfix">
+						
+							<div class="col-md-12 overflowfix col">
+								<div>
+									
+
+
+<!-- <pre></pre> -->
+	<div class="breadcrumbs">
+		
+
+			
+				<a href="../../index.html">Heim</a> - 
+			
+		
+
+			
+				<a href="../../turar.html">Turar</a> - 
+			
+		
+
+			
+				<a href="../vinterturar.html">Vinterturar</a> - 
+			
+		
+
+			
+				<a class="current" href="slogen-1564moh.html">Slogen 1564moh</a>
+			
+		
+	    
+	    <!-- <a href="/turar">Turar</a> - -->
+	    <!-- <a href="/turar/" class="current"></a> -->
+	</div>
+	<script type="application/ld+json">
+	{
+	 "@context": "http://schema.org",
+	 "@type": "BreadcrumbList",
+	 "itemListElement":
+	 [
+	 
+	 	{
+	 		"@type": "ListItem",
+	 		"position": 1,
+	 		"item":{
+	 			"@id": "/",
+	 			"name": "Heim"
+	 		}
+	 	}
+	 	
+	 		,
+	 	
+	 
+	 	{
+	 		"@type": "ListItem",
+	 		"position": 2,
+	 		"item":{
+	 			"@id": "/turar",
+	 			"name": "turar"
+	 		}
+	 	}
+	 	
+	 		,
+	 	
+	 
+	 	{
+	 		"@type": "ListItem",
+	 		"position": 3,
+	 		"item":{
+	 			"@id": "/turar/vinterturar",
+	 			"name": "vinterturar"
+	 		}
+	 	}
+	 	
+	 		,
+	 	
+	 
+	 	{
+	 		"@type": "ListItem",
+	 		"position": 4,
+	 		"item":{
+	 			"@id": "/turar/vinterturar/slogen-1564moh",
+	 			"name": "Slogen 1564moh"
+	 		}
+	 	}
+	 	
+	 
+	 ]
+	}
+	</script>
+	
+
+
+
+<div class="article row">
+	<div class="col-md-8">
+			<h1>Slogen 1564moh</h1>
+			<p class="ingress">Slogen dronninga i Sunnmørsalpane.</p>
+
+			
+			<div class="slideshow">
+			<ul class="light-slider">
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/przviak9adfwxcfvr6cr.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/przviak9adfwxcfvr6cr.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/sxbkeyzoiezrm2tmcrhh.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/sxbkeyzoiezrm2tmcrhh.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/ms7s3jchtfvzafp0gdvy.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/ms7s3jchtfvzafp0gdvy.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/gamxwlcslbj0mtdilj2g.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/gamxwlcslbj0mtdilj2g.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/yr0spmeouums5h1nxyrx.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/yr0spmeouums5h1nxyrx.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/jrfjxecqgqrxrqsnwvx7.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/jrfjxecqgqrxrqsnwvx7.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/jkoysth0s1l2dfm9xzhe.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/jkoysth0s1l2dfm9xzhe.jpg">
+				</li>
+				
+				<li data-thumb="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,h_50,w_100/mlnr2ckmxuvawdc2ug1r.jpg">
+					<img style="width:100%" src="https://res.cloudinary.com/dcxsmu9ql/image/upload/c_fill,g_auto,h_400,w_750/mlnr2ckmxuvawdc2ug1r.jpg">
+				</li>
+				
+			</ul>
+			</div>
+			
+
+			<div><p style="margin-bottom: 0cm;">Fr&#xE5; fjorden r&#xF8;yser Slogen seg majestetisk. Dette er Dronninga i Sunnm&#xF8;rsalpane. Dette er det mest kjende fjellet i Hj&#xF8;rundfjorden, ja kanskje i heile landet. Om Slogen seier fjellpioneren W C Slingsby : &#xAB;You will never see another such beautiful view!&#xBB; Han visste kva han snakka om. Ein fabelaktig annmars blant kvasse tindar. Alpin tiln&#xE6;rming i alpint tereng, Ei nedkj&#xF8;yring som ikkje stend attende for det beste dei har &#xE5; by p&#xE5; i Alpane. &#xA0;</p>
+
+<h2>Utstyr:</h2>
+<p style="margin-bottom: 0cm;">Skreds&#xF8;kjar, spade og stong m&#xE5; alle ha med, om du ikkje har dette kan du leige dette hj&#xE5; oss.</p>
+<p style="margin-bottom: 0cm;">Ryggsekk med mat og drikke og bekledning for ein lang dag i fjellet.&#xA0;</p></div>
+			
+			
+
+	</div>
+	<div class="col-md-4 class sideinfo">
+	
+		<div>
+			<h2>Priser</h2>
+			<p><p style="margin-bottom: 0cm;">PRISAR: Vi tek 1500 kr pr person, dette om Dykk er 4 eller meir. Om Dykk er 3 personar tek vi kr 2000 pr person. 2 personar kr 3000 pr person. Ved 1 person er prisen kr 6000.</p>
+<p style="margin-bottom: 0cm;">&nbsp;</p>
+<p style="margin-bottom: 0cm;">&nbsp;Maks 6 personar pr guide.</p>
+<p style="margin-bottom: 0cm;">&nbsp;</p>
+<p>Ved st&oslash;rre grupper ta kontakt for pristilbod. Vi ordnar og overnatting, mat, b&aring;tskyss, henting/bringing og andre foresp&oslash;rslar.</p></p>
+
+		</div>
+	
+		<div>
+			<h2>Lyst å være med?</h2>
+			<p><p>Denne turen er gjennomf&oslash;rbar heile &aring;ret. P&aring; ski vinteren eller som v&aring;rskitur. Haust og sommar sv&aelig;rt fin som fottur. Ogs&aring; flott som stegjernstur om vinteren.</p> </p>
+		</div>
+			
+		
+		<button class="btn btn-success" clickopen=".minikontakt" killme style="margin-top:10px">Send forespørsel</button>
+<div class="can-be-open minikontakt">
+	<h2>Kontakt oss</h2>
+	<p><strong>Epost:</strong> kontakt@hjorundfjordmountainguide.no</p>
+	<p><strong>Tlf:</strong> +47 45235902 eller +47 95065934</p>
+
+
+</div>
+
+		
+		<div>
+			<p><h3>Forutsetningar:</h3>
+<p style="margin-bottom: 0cm;">V&#xE5;re turar og kurs skal i st&#xF8;rst mogeleg grad vere i tr&#xE5;d med kvar einskild og gruppa sine forutsetningar. (fysisk form, ferdigheiter, erfaring osv) Det er derfor viktig at du tek hensyn til dette ved valg av tur. Er du i tvil ta kontakt med oss.</p>
+
+<h3>Ver Og F&#xF8;re</h3>
+<p style="margin-bottom: 0cm;">Ved d&#xE5;rleg ver,f&#xF8;re eller forhold forbeheld vi oss retten til &#xE5; g&#xE5; ein alternativ tur. Dette er det v&#xE5;r Guide som tek bestemmelsen p&#xE5;. Om vi ikkje kan tilby ein alternativ tur eller eit arrangement f&#xE5;r deltakarane refundert det innbetalte bel&#xF8;pet.</p>
+
+<h3>Ansvar Og Medansvar:</h3>
+<p style="margin-bottom: 0cm;">Deltakelse p&#xE5; fjellsportarrangement er forbundet med ein viss risiko. Uhell og skader kan forekome. Vi pr&#xF8;ver til ein kvar tid &#xE5; minimere denne risikoen/konsekvensen. V&#xE5;re Guider har det overordna ansvaret for sikkerheita i gruppa. For at v&#xE5;re Guider skal vere ansvarlig forutsett det at den enkelte gjest til ein kvar tid er medansvarleg og fylgjer v&#xE5;re Guiders anvisningar.</p>
+
+<h3>Forsikring:</h3>
+<p>Vi tilbyr ikkje avbestillingsbeskyttelse, reise eller ulykkesforsikring p&#xE5; v&#xE5;re arrangement. Den enkelte deltakar er sj&#xF8;lv ansvarleg for &#xE5; teikne n&#xF8;dvendig reise og ulykkesforsikring med eventuelt avbestillingsbeskyttelse.</p></p>
+		</div>
+		
+	</div>
+	
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" width="400" data-href="https://hjorundfjordmountainguide.no/turar/vinterturar/slogen-1564moh" data-numposts="5"></div>
+
+
+</div>
+
+
+
+
+									<!-- <div class="col-sm-12 col spons">
+										<p>Kontakt oss for eit skreddarsydd opplegg.</p>
+										<a class="btn btn-info"  href="/kontakt">
+										Kontakt oss
+										</a>
+									</div> -->
+								</div>
+							</div>
+
+						
+					</div>
+				</div>
+			</div>
+
+	</div>
+
+	
+<footer>
+	<div class="container">
+		<div class="footer-content">
+			<div class="row">
+				<div class="col-md-12 col">
+					<img src="../../images/logo200inv.png" />
+					<p class="strong">Hjørundfjord Mountain Guide</p>
+					<p>kontakt@hjorundfjordmountainguide.no</p>
+					<img style="max-width: 200px;" src="../../images/rablogo.svg" />
+					<p>Tlf: +47 45235902 eller +47 95065934</p>
+					<p>Org.nr: 926 678 159</p>
+
+					<p style="padding-top: 12px; margin-bottom: 0">
+						Nettside og design av
+						<a style="color: white" href="https://larskarbo.no">Lars Karbø</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		
+		
+
+	
+
+			
+			<script src="../../js/jquery/jquery-1.11.3.min.js"></script>
+
+			
+			<!-- <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script> -->
+
+
+			
+
+			
+			<script type="text/javascript" src="../../js/angular.js"></script>
+
+			<!-- calendar -->
+			<!-- <link rel="stylesheet" href="/bower_components/fullcalendar/dist/fullcalendar.min.css">
+			<script src="/bower_components/moment/min/moment.min.js"></script>
+			<script src="/bower_components/moment/locale/nb.js"></script>
+			<script src="/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+			<script src="/bower_components/fullcalendar/dist/lang/nb.js"></script>
+ -->
+			<script>
+			// $(document).ready(function(){
+			// 	$('#calendar').fullCalendar({
+			// 		lang: 'nb',
+			// 		fixedWeekCount: false,
+			// 		titleFormat: "MMMM",
+			// 		weekNumbers: false,
+			// 		height: 330,
+			// 		// dayClick: $scope.dayClick,
+			// 		// eventClick: $scope.eventClick,
+			// 		events: '/kalender/get-events',
+			// 		header:{
+			// 			left: 'title',
+			// 			center: '',
+			// 			right: 'prev next'
+			// 		}
+			// 	});
+				
+			// })
+
+			$("a[href^='http']").attr("target","_blank");
+			</script>
+
+			
+			
+	
+<link rel="stylesheet" type="text/css" href="../../bower_components/lightslider/dist/css/lightslider.min.css">
+<script src="../../bower_components/lightslider/dist/js/lightslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".light-slider").lightSlider({
+			    gallery: true,
+			    item: 1,
+
+			    loop: false,
+			    // enableTouch: false,
+			    thumbItem: 9
+			});
+        });
+    </script>
+
+
+			
+			<script src="../../js/kontakt.js"></script>
+			
+
+
+		
+			<script>
+				$(function() {
+				  $('a[href*="#"]:not([href="#"])').click(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				      if (target.length) {
+				        $('html, body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+				      }
+				    }
+
+				 //    document.querySelector('#body').scrollIntoView({ 
+					//   behavior: 'smooth' 
+					// });
+				  });
+				});
+			</script>
+		
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124659982-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-124659982-1');
+			</script>
+
+
+			<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Organization",
+			  "url": "https://hjorundfjordmountainguide.no",
+			  "contactPoint": [{
+			    "@type": "ContactPoint",
+			    "telephone": "+47 45235902",
+			    "contactType": "customer service"
+			  }]
+			}
+			</script>
+
+			<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "WebSite",
+			  "name": "Hjørundfjord Mountain Guide",
+			  "url": "https://hjorundfjordmountainguide.no"
+			}
+
+			</script>
+
+
+	</body>
+</html>
